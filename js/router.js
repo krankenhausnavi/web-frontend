@@ -2,14 +2,17 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'controllers/start'
-], function($, _, Backbone, StartController) {
+    'controllers/start',
+    'controllers/detail'
+], function($, _, Backbone, StartController, DetailController) {
     var AppRouter = Backbone.Router.extend({
         routes: {
-            "start": "start"
+            "start": "start",
+            "detail": "detail"
         },
 
         start: StartController,
+        detail: DetailController,
 
         initialize: function () {
             var self = this;
@@ -25,7 +28,7 @@ define([
 
     var initialize = function(){
         var app_router = new AppRouter;
-        app_router.on('start', );
+        app_router.on('start',);
         if (!Backbone.history.start()) window.location.hash = 'start';
         return app_router;
     };
