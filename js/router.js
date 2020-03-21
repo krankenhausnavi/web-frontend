@@ -2,10 +2,14 @@ define([
     'jquery',
     'underscore',
     'backbone',
-], function($, _, Backbone) {
+    'controllers/start'
+], function($, _, Backbone, StartController) {
     var AppRouter = Backbone.Router.extend({
         routes: {
+            "start": "start"
         },
+
+        start: StartController,
 
         initialize: function () {
             var self = this;
