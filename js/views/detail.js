@@ -8,7 +8,6 @@ define([
         render: function () {
             var compiledTemplate = _.template(DetailHtml);
             this.$el.html(compiledTemplate());
-
             return this;
         }
     });
