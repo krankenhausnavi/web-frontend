@@ -3,7 +3,8 @@ define([
     'underscore',
     'backbone',
     'bootstrap',
-    'router'
+    'router',
+    'address_field'
 ], function ($, _, Backbone, Bootstrap, Router) {
         var initialize = function () {
 

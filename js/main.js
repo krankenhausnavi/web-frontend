@@ -11,9 +11,11 @@ require.config({
         underscore: '../libs/underscore/underscore',
         backbone: '../libs/backbone/backbone',
         jquery: '../libs/jquery/jquery',
+        jqueryui: '../libs/jquery-ui/jquery-ui',
         bootstrap: '../libs/bootstrap/bootstrap',
         OpenLayers: '../libs/openlayers/OpenLayers',
-        map: 'map/map'
+        map: 'map/map',
+        address_field: 'map/address_field'
     },
     shim: {
         bootstrap: {
@@ -24,6 +26,9 @@ require.config({
         },
         map: {
             deps: ["OpenLayers"]
+        },
+        address_field: {
+            deps: ["jqueryui"]
         }
     }
 });

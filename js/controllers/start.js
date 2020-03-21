@@ -25,6 +25,18 @@ define([
         var startView = new StartView();
         $('#content').html(startView.render().el);
 
+        enable_autocomplete_of_address($('#address'));
+
+        $('#address').change(function () {
+            var data = {
+                'query': $('#address').val(),
+                'culture': 'de',
+                'key': window.Config.BING_API_KEY
+            };
+
+        });
+
+
         self.map = new Map("map");
 
         self.move_map_to(7.406265240904387, 48.99908606581882);
