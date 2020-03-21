@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77871485-b3d5-43b9-b875-b8eccc76a54a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/controllers/start.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tpl/start.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/views/start.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/map.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/controllers/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controllers/start.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/tpl/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/tpl/start.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +37,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/openlayers" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/libs/openlayers" />
       <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="map.coffee" type="NodeJSConfigurationType" nameIsGenerated="true" node-parameters="--require coffeescript/register" path-to-js-file="map.coffee" working-dir="$PROJECT_DIR$/js/map">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -65,11 +75,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584786734441</updated>
-      <workItem from="1584786738720" duration="1942000" />
+      <workItem from="1584786738720" duration="5623000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2115" y="222" key="#map.coffee" timestamp="1584791626630">
+      <screen x="1440" y="-51" width="1920" height="1177" />
+    </state>
+    <state x="2115" y="222" key="#map.coffee/0.23.1440.877/1440.-51.1920.1177@1440.-51.1920.1177" timestamp="1584791626630" />
   </component>
 </project>

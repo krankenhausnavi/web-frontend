@@ -1,5 +1,9 @@
 // Filename: main.js
 
+window.Config = {
+    "BING_API_KEY": "AsXsS7fjmdljPUWBsUshFg-W-kN_HMoTgbCticeMsV9zrhCpF9dN5ZRWx54yWjXk"
+};
+
 // Require.js allows us to configure shortcut alias
 // There usage will become more apparent further along in the tutorial.
 require.config({
@@ -8,6 +12,8 @@ require.config({
         backbone: '../libs/backbone/backbone',
         jquery: '../libs/jquery/jquery',
         bootstrap: '../libs/bootstrap/bootstrap',
+        OpenLayers: '../libs/openlayers/OpenLayers',
+        map: 'map/map'
     },
     shim: {
         bootstrap: {
@@ -15,6 +21,9 @@ require.config({
         },
         backgridSelect2Cell: {
             deps: ["select2"]
+        },
+        map: {
+            deps: ["OpenLayers"]
         }
     }
 });
