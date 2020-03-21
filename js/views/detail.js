@@ -3,7 +3,7 @@ define([
     'underscore',
     'backbone',
     'text!tpl/detail.html'
-], function ($, _, Backbone, DetilHtml) {
+], function ($, _, Backbone, DetailHtml) {
     return Backbone.View.extend({
         render: function () {
             var compiledTemplate = _.template(DetailHtml);
