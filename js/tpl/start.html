@@ -1,20 +1,16 @@
 <div class="row mt-2 mb-2">
-    <div class="col-12">
-        <div class="input-group pl-2 pr-2">
-            <input id="address" type="text" class="form-control" placeholder="Straße, PLZ, Ort" aria-label="Adresssuche" aria-describedby="button-addon2">
-            <div class="input-group-append">
-                <button id="search" class="btn btn-outline-primary address" type="button" id="button-addon2">Suchen</button>
+    <div class="col">
+        <div class="p-2">
+            Radius&nbsp;<input id="area" type="number" min="1" max="30" value="10">
+            <br>
+            <div class="input-group">
+                <input id="address" type="text" class="form-control" placeholder="Straße, PLZ, Ort" aria-label="Adresssuche" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button id="search" class="btn btn-outline-primary address" type="button" id="button-addon2">Suchen</button>
+                </div>
             </div>
+            <br>
+            <button class="btn btn-primary btn-lg" id="locate">Ärzte und Krankenhäuser in meiner Nähe</button>
         </div>
     </div>
 </div>
-
-<div class="row">
-    <div class="col-12">
-        <div class="largemap-wrapper main-row">
-            <div class="largemap" id="map"></div>
-        </div>
-    </div>
-</div>
-
-<div id="poislist"></div>

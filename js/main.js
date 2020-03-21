@@ -15,7 +15,8 @@ require.config({
         bootstrap: '../libs/bootstrap/bootstrap',
         OpenLayers: '../libs/openlayers/OpenLayers',
         map: 'map/map',
-        address_field: 'map/address_field'
+        address_field: 'map/address_field',
+        geocode: 'map/geocode'
     },
     shim: {
         bootstrap: {

@@ -4,25 +4,16 @@
   // Get lat/lon for given address.
   // Uses Bing location service.
 
-  // @param string street
-  //  The street and house number of the address.
-
-  // @param int zip
-  //  The zip code of the address.
-
-  // @param string city
-  //  The city of the address.
+  // @param string query
+  //  The address
 
   // @param function callback
   //  Callback function that takes long, lat and zip code.
   //#
-  window.geocode = function(street, zip, city, callback) {
+  window.geocode_query = function(query, callback) {
     var data;
     data = {
-      'countryRegion': 'de',
-      'postalCode': zip,
-      'locality': city,
-      'addressLine': street,
+      'query': query,
       'culture': 'de',
       'key': window.Config.BING_API_KEY
     };
@@ -32,7 +23,7 @@
       'dataType': 'jsonp',
       'jsonp': 'jsonp',
       success: function(data) {
-        var latlon, ref, ref1, ref2, ref3, ref4, ref5, result;
+        var latlon, ref, ref1, ref2, ref3, ref4, ref5, result, zip;
         result = (ref = data.resourceSets) != null ? (ref1 = ref[0]) != null ? (ref2 = ref1.resources) != null ? ref2[0] : void 0 : void 0 : void 0;
         latlon = result != null ? (ref3 = result.geocodePoints) != null ? (ref4 = ref3[0]) != null ? ref4.coordinates : void 0 : void 0 : void 0;
         zip = result != null ? (ref5 = result.address) != null ? ref5.postalCode : void 0 : void 0;

@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77871485-b3d5-43b9-b875-b8eccc76a54a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/controllers/pos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/tpl/pos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/views/pos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/controllers/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controllers/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/map/map.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/js/map/map.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/map/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/collections/pois.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/collections/pois.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/controllers/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controllers/start.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/map/compile.sh" beforeDir="false" afterPath="$PROJECT_DIR$/js/map/compile.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/map/geocode.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/js/map/geocode.coffee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/map/geocode.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map/geocode.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/tpl/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/tpl/start.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/openlayers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js/tpl" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -44,6 +51,9 @@
       <recent name="$PROJECT_DIR$/js" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js/tpl" />
+      <recent name="$PROJECT_DIR$/js/views" />
+      <recent name="$PROJECT_DIR$/js/controllers" />
       <recent name="$PROJECT_DIR$/libs/openlayers" />
       <recent name="$PROJECT_DIR$" />
     </key>

@@ -3,16 +3,19 @@ define([
     'underscore',
     'backbone',
     'controllers/start',
-    'controllers/detail'
-], function($, _, Backbone, StartController, DetailController) {
+    'controllers/pos',
+    'controllers/detail',
+], function($, _, Backbone, StartController, PosController, DetailController) {
     var AppRouter = Backbone.Router.extend({
         routes: {
             "start": "start",
+            "pos/:lat/:lon/:area": "pos",
             "detail/:id": "detail"
         },
 
         start: StartController,
         detail: DetailController,
+        pos: PosController,
 
         initialize: function () {
             var self = this;
