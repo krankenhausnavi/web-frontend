@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77871485-b3d5-43b9-b875-b8eccc76a54a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/collections/pois.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/models/poi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tpl/poislist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/views/poislist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/controllers/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controllers/start.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/tpl/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/tpl/start.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/controllers/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controllers/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/map/map.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/js/map/map.coffee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/map/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/router.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

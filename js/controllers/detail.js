@@ -3,8 +3,6 @@ define([
     'underscore',
     'backbone',
     'views/detail',
-    'views/poislist',
-    'collections/pois',
     'map'
 ], function ($, _, Backbone, DetailView) {
     return function () {

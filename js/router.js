@@ -8,7 +8,7 @@ define([
     var AppRouter = Backbone.Router.extend({
         routes: {
             "start": "start",
-            "detail": "detail"
+            "detail/:id": "detail"
         },
 
         start: StartController,
