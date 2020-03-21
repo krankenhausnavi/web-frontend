@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77871485-b3d5-43b9-b875-b8eccc76a54a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/map.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/map.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/map.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/controllers/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controllers/start.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/tpl/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/tpl/start.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/map/map.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/js/map/map.coffee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/map/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map/map.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584786734441</updated>
-      <workItem from="1584786738720" duration="5623000" />
+      <workItem from="1584786738720" duration="8211000" />
     </task>
     <servers />
   </component>

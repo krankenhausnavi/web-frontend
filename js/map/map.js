@@ -301,7 +301,9 @@
           this._overlay_layers.splice(i, 1);
         }
       }
-      this._poi_select_feature.setLayer(obj_to_arr(this._poi_layers));
+      if (this._poi_select_feature) {
+        this._poi_select_feature.setLayer(obj_to_arr(this._poi_layers));
+      }
       return this._ol_map.removeLayer(layer);
     }
 

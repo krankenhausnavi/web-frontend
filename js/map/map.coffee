@@ -301,7 +301,8 @@ class window.Map
           if l is layer
             @_overlay_layers.splice(i, 1)
 
-        @_poi_select_feature.setLayer(obj_to_arr(@_poi_layers))
+        if @_poi_select_feature
+            @_poi_select_feature.setLayer(obj_to_arr(@_poi_layers))
         @_ol_map.removeLayer(layer)
 
     ##

@@ -135,6 +135,7 @@
 }
 
 
-#map_map_settings_list label.radio input {
+#map_map_settings_list label.radio input,
+#map_map_settings_list label.checkbox input {
     margin-right: 5px;
 }
