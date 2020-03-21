@@ -1,0 +1,68 @@
+﻿#rolloutSteps tr.future-rollout {
+    background: lightYellow;
+}
+
+#rolloutSteps .backgrid th.day,
+#rolloutSteps .backgrid th.sccmGroup,
+#rolloutSteps .backgrid th.plannedDate,
+#rolloutSteps .backgrid td.select-cell,
+#rolloutFreeDays .backgrid th.date,
+#rolloutFreeDays .backgrid th.description {
+    text-align: left;
+}
+
+#rolloutSteps .select2-container {
+    width: 100% !important;
+}
+
+#rolloutSteps .backgrid th.day,
+#rolloutSteps .backgrid th.ctrlsAdd,
+#rolloutSteps .backgrid th.ctrlsDelete {
+    white-space: nowrap;
+    text-align: right;
+}
+
+#rolloutSteps .backgrid th.sccmGroup,
+#rolloutFreeDays .backgrid th.description {
+    width: 99%
+}
+
+.backgrid thead th {
+    vertical-align: middle;
+}
+
+.backgrid thead th button.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.backgrid thead th button.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.backgrid thead th button.btn {
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    padding: 0.375rem 0.75rem;
+}
+
+.back-link {
+    color: #000;
+    font-size: 120%;
+}
+
+#nav a.nav-link {
+    color: #000;
+}
+
+#nav a.nav-link.active {
+    color: #fff;
+}
+
+.fc-day-grid-event .fc-content {
+    white-space: normal !important;
+}
