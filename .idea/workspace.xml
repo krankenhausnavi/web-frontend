@@ -2,17 +2,462 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77871485-b3d5-43b9-b875-b8eccc76a54a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/controllers/pos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tpl/pos.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/views/pos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/krankentransport.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/css/material-kit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/css/material-kit.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/css/material-kit.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/demo/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/apple-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/arrow-left.cur" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/arrow-left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/arrow-right.cur" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/arrow-right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/bg3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/bg7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/city-profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/city.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/examples/clem-onojegaw.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/examples/clem-onojeghuo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/examples/cynthia-del-rio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/examples/mariya-georgieva.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/examples/olu-eletu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/examples/studio-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/examples/studio-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/examples/studio-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/examples/studio-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/examples/studio-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/faces/avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/faces/camp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/faces/card-profile1-square.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/faces/card-profile2-square.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/faces/card-profile4-square.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/faces/card-profile5-square.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/faces/card-profile6-square.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/faces/christian.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/faces/kendall.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/faces/marc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/landing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/profile_city.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/img/responsive-nav.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/js/core/bootstrap-material-design.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/js/core/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/js/core/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/js/material-kit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/js/material-kit.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/js/material-kit.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/js/plugins/bootstrap-datetimepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/js/plugins/jquery.sharrre.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/js/plugins/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/js/plugins/nouislider.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_alerts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_badges.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_checkboxes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_core-bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_custom-forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_drawer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_example-pages.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_footers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_headers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_images.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_info-areas.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_input-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_layout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_misc.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_pills.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_popover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_radios.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_responsive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_ripples.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_switches.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_tabs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_togglebutton.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_button-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_close.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_code.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_custom-forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_images.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_input-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_jumbotron.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_media.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_popover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_print.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_root.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_transitions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/bootstrap-grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/bootstrap-reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_background-variant.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_border-radius.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_box-shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_caret.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_gradients.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_grid-framework.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_hover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_lists.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_nav-divider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_navbar-align.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_reset-text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_resize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_size.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_table-row.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_text-emphasis.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_text-hide.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_text-truncate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_transition.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/mixins/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/utilities/_align.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/utilities/_background.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/utilities/_borders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/utilities/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/utilities/_display.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/utilities/_embed.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/utilities/_flex.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/utilities/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/utilities/_position.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/utilities/_screenreaders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/utilities/_sizing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/utilities/_spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/utilities/_text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/bootstrap/scss/utilities/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/cards/_card-carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/cards/_card-login.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/cards/_card-plain.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/mixins/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/mixins/_animations.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/mixins/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/mixins/_colored-shadows.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/mixins/_drawer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/mixins/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/mixins/_hover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/mixins/_layout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/mixins/_navbar-colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/mixins/_navs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/mixins/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/mixins/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/plugins/_plugin-datetime-picker.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/plugins/_plugin-nouislider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_body.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_bootstrap-material-design-base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_bootstrap-material-design.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_brand.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_code.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_colors-map.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_custom-forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_drawer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_layout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_menu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_modals.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_snackbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_state.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/assets/scss/material-kit/variables/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/css/material-kit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/css/material-kit.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/css/material-kit.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/demo/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/docs/documentation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/examples/landing-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/examples/login-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/examples/profile-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/apple-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/arrow-left.cur" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/arrow-left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/arrow-right.cur" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/arrow-right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/bg3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/bg7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/city-profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/city.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/examples/clem-onojegaw.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/examples/clem-onojeghuo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/examples/cynthia-del-rio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/examples/mariya-georgieva.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/examples/olu-eletu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/examples/studio-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/examples/studio-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/examples/studio-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/examples/studio-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/examples/studio-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/faces/avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/faces/camp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/faces/card-profile1-square.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/faces/card-profile2-square.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/faces/card-profile4-square.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/faces/card-profile5-square.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/faces/card-profile6-square.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/faces/christian.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/faces/kendall.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/faces/marc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/landing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/profile_city.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/img/responsive-nav.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/js/core/bootstrap-material-design.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/js/core/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/js/core/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/js/material-kit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/js/material-kit.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/js/material-kit.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/js/plugins/bootstrap-datetimepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/js/plugins/jquery.sharrre.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/js/plugins/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/js/plugins/nouislider.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/material-kit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/material-kit.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/material-kit.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_alerts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_badges.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_checkboxes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_core-bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_custom-forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_drawer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_example-pages.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_footers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_headers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_images.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_info-areas.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_input-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_layout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_misc.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_pills.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_popover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_radios.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_responsive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_ripples.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_switches.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_tabs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_togglebutton.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_button-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_close.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_code.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_custom-forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_images.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_input-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_jumbotron.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_media.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_popover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_print.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_root.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_transitions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/bootstrap-grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/bootstrap-reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_background-variant.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_border-radius.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_box-shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_caret.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_gradients.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_grid-framework.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_hover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_lists.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_nav-divider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_navbar-align.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_reset-text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_resize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_size.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_table-row.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_text-emphasis.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_text-hide.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_text-truncate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_transition.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/mixins/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/utilities/_align.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/utilities/_background.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/utilities/_borders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/utilities/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/utilities/_display.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/utilities/_embed.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/utilities/_flex.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/utilities/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/utilities/_position.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/utilities/_screenreaders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/utilities/_sizing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/utilities/_spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/utilities/_text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/bootstrap/scss/utilities/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/cards/_card-carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/cards/_card-login.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/cards/_card-plain.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/mixins/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/mixins/_animations.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/mixins/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/mixins/_colored-shadows.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/mixins/_drawer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/mixins/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/mixins/_hover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/mixins/_layout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/mixins/_navbar-colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/mixins/_navs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/mixins/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/mixins/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/plugins/_plugin-datetime-picker.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/plugins/_plugin-nouislider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_body.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_bootstrap-material-design-base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_bootstrap-material-design.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_brand.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_code.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_colors-map.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_custom-forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_drawer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_layout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_menu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_modals.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_snackbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_state.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/scss/material-kit/variables/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/material-kit/template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/collections/pois.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/collections/pois.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/controllers/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controllers/start.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/map/compile.sh" beforeDir="false" afterPath="$PROJECT_DIR$/js/map/compile.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/map/geocode.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/js/map/geocode.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/map/geocode.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/map/geocode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/tpl/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/tpl/start.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,19 +488,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js/tpl" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/material-kit" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$/libs/material-kit" />
       <recent name="$PROJECT_DIR$/libs" />
       <recent name="$PROJECT_DIR$/js" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/libs/material-kit" />
       <recent name="$PROJECT_DIR$/js/tpl" />
       <recent name="$PROJECT_DIR$/js/views" />
       <recent name="$PROJECT_DIR$/js/controllers" />
       <recent name="$PROJECT_DIR$/libs/openlayers" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -86,6 +533,8 @@
       <option name="presentableId" value="Default" />
       <updated>1584786734441</updated>
       <workItem from="1584786738720" duration="10545000" />
+      <workItem from="1584830108110" duration="49000" />
+      <workItem from="1584830172708" duration="1607000" />
     </task>
     <servers />
   </component>
@@ -93,6 +542,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="320" y="128" key="#Images" timestamp="1584830836836">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="128" key="#Images/0.23.1440.877/1440.-51.1920.1177@0.23.1440.877" timestamp="1584830836836" />
     <state x="2115" y="222" key="#map.coffee" timestamp="1584791626630">
       <screen x="1440" y="-51" width="1920" height="1177" />
     </state>
@@ -109,5 +562,13 @@
       <screen x="1440" y="-51" width="1920" height="1177" />
     </state>
     <state x="1540" y="49" width="1720" height="977" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.877/1440.-51.1920.1177@1440.-51.1920.1177" timestamp="1584804505711" />
+    <state x="1984" y="313" key="com.intellij.ide.util.TipDialog" timestamp="1584830111610">
+      <screen x="1440" y="-51" width="1920" height="1177" />
+    </state>
+    <state x="1984" y="313" key="com.intellij.ide.util.TipDialog/0.23.1440.877/1440.-51.1920.1177@0.23.1440.877" timestamp="1584830111610" />
+    <state x="2077" y="191" width="645" height="693" key="find.popup" timestamp="1584829608332">
+      <screen x="1440" y="-51" width="1920" height="1177" />
+    </state>
+    <state x="2077" y="191" width="645" height="693" key="find.popup/0.23.1440.877/1440.-51.1920.1177@1440.-51.1920.1177" timestamp="1584829608332" />
   </component>
 </project>

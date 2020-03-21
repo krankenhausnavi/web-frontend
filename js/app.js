@@ -2,10 +2,10 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'bootstrap',
     'router',
-    'address_field'
-], function ($, _, Backbone, Bootstrap, Router) {
+    'address_field',
+    'materialkit'
+], function ($, _, Backbone, Router) {
         var initialize = function () {
 
         // global ajax error handler.

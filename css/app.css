@@ -70,3 +70,13 @@
 .ui-autocomplete.ui-front {
     z-index: 1001;
 }
+.start-bg-filter:after {
+    background: rgba(0, 0, 0, 0.7);
+    /* background: linear-gradient(45deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%); */
+    /* background: -moz-linear-gradient(135deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%); */
+    /* background: -webkit-linear-gradient(135deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%); */
+}
+
+.start-brand {
+    padding: 10px 50px;
+}

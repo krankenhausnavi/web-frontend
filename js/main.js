@@ -12,11 +12,11 @@ require.config({
         backbone: '../libs/backbone/backbone',
         jquery: '../libs/jquery/jquery',
         jqueryui: '../libs/jquery-ui/jquery-ui',
-        bootstrap: '../libs/bootstrap/bootstrap',
         OpenLayers: '../libs/openlayers/OpenLayers',
         map: 'map/map',
         address_field: 'map/address_field',
-        geocode: 'map/geocode'
+        geocode: 'map/geocode',
+        materialkit: '../libs/material-kit/js/material-kit'
     },
     shim: {
         bootstrap: {
@@ -30,6 +30,9 @@ require.config({
         },
         address_field: {
             deps: ["jqueryui"]
+        },
+        materialkit: {
+            deps: ["jquery"]
         }
     }
 });
