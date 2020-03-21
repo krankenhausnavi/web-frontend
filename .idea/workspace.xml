@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77871485-b3d5-43b9-b875-b8eccc76a54a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/map/address_field.coffee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/map/geocode.coffee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/collections/pois.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/models/poi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/tpl/poislist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/views/poislist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/controllers/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controllers/start.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/map/compile.sh" beforeDir="false" afterPath="$PROJECT_DIR$/js/map/compile.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/tpl/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/js/tpl/start.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -90,6 +89,14 @@
       <screen x="1440" y="-51" width="1920" height="1177" />
     </state>
     <state x="2115" y="222" key="#map.coffee/0.23.1440.877/1440.-51.1920.1177@1440.-51.1920.1177" timestamp="1584791626630" />
+    <state x="1824" y="176" key="MergeDialog" timestamp="1584808112063">
+      <screen x="1440" y="-51" width="1920" height="1177" />
+    </state>
+    <state x="1824" y="176" key="MergeDialog/0.23.1440.877/1440.-51.1920.1177@1440.-51.1920.1177" timestamp="1584808112063" />
+    <state x="2116" y="261" key="MultipleFileMergeDialog" timestamp="1584808112111">
+      <screen x="1440" y="-51" width="1920" height="1177" />
+    </state>
+    <state x="2116" y="261" key="MultipleFileMergeDialog/0.23.1440.877/1440.-51.1920.1177@1440.-51.1920.1177" timestamp="1584808112111" />
     <state x="1540" y="49" width="1720" height="977" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1584804505711">
       <screen x="1440" y="-51" width="1920" height="1177" />
     </state>
