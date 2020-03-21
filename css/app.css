@@ -66,3 +66,7 @@
 .fc-day-grid-event .fc-content {
     white-space: normal !important;
 }
+
+.ui-autocomplete.ui-front {
+    z-index: 1001;
+}
