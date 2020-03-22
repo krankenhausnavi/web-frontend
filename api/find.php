@@ -265,13 +265,16 @@ while ($row = $stmt->fetch()) {
         $poi['opening_hours'] = array();
     }
 
+    $max_available = random_int(10, 300);
+    $in_use = $max_available * random_int(1, 100)/100;
+
     if ($row['r_id'] !== null) {
         $poi['resources'] = array(
             $row['r_id'] => array(
                 'type' => $row['r_resource_type'],
                 'in_use' => $row['r_max_capacity'] - $row['r_current_capacity'],
-                'max_available' => $row['r_max_capacity'],
-                'last_update' => $row['r_timestamp'],
+                'max_available' => $max_available,
+                'last_update' => $in_use,
             )
         );
     }  else {
