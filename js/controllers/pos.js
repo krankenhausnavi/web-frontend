@@ -18,6 +18,14 @@ define([
 
         map.addMarker("Ihre Position", lon, lat, '../../img/marker.png');
 
+        map.addPois(
+            "Krankenhäuser und Ärzte",
+            "https://krankenbett.wo-zu-finden.de/api/find.php?format=geojson&lon=" + lon + "&lat=" + lat + "&area=" + area,
+            1,
+            '/img/marker.png',
+            '#BF0000'
+        );
+
         var poisCollection = new PoisCollection();
         poisCollection.fetch({
             data: $.param({ "lon": lon, "lat": lat, "area": area}),
