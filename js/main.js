@@ -10,13 +10,19 @@ require.config({
     paths: {
         underscore: '../libs/underscore/underscore',
         backbone: '../libs/backbone/backbone',
-        jquery: '../libs/jquery/jquery',
+        jquery: '../libs/material-kit/js/core/jquery.min',
         jqueryui: '../libs/jquery-ui/jquery-ui',
         OpenLayers: '../libs/openlayers/OpenLayers',
         map: 'map/map',
         address_field: 'map/address_field',
         geocode: 'map/geocode',
-        materialkit: '../libs/material-kit/js/material-kit'
+        popper: '../libs/material-kit/js/core/popper.min',
+        bootstrap: '../libs/material-kit/js/core/bootstrap-material-design.min',
+        moment: '../libs/material-kit/js/plugins/moment.min',
+        datepicker: '../libs/material-kit/js/plugins/bootstrap-datetimepicker',
+        nouislider: '../libs/material-kit/js/plugins/nouislider.min',
+        materialkit: '../libs/material-kit/js/material-kit',
+        initBootstrap : "initBootstrap"
     },
     shim: {
         bootstrap: {
@@ -32,7 +38,7 @@ require.config({
             deps: ["jqueryui"]
         },
         materialkit: {
-            deps: ["jquery"]
+            deps: ["initBootstrap", "moment", "datepicker", "nouislider"]
         }
     }
 });
