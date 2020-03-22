@@ -347,6 +347,8 @@ function results_format_geojson($results) {
             $properties['Webseite'] = $poi['website'];
         }
 
+        $properties["<a class=\"btn btn-info btn-block btn-lg\" href=\"https://krankenbett.wo-zu-finden.de/#detail/${type}/${id}\">&nbsp;Mehr Informationen</a>"] = "";
+
         $feature = array(
             'type' => 'Feature',
             'geometry' => array(

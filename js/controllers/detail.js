@@ -27,6 +27,7 @@ define([
                     var hospitalView = new HospitalView({model: institution});
                     $('#detail-content').html(hospitalView.render().el);
                 }
+                /*
                 var lat = institution.get('latitude');
                 var lon = institution.get('longitude');
 
@@ -35,6 +36,7 @@ define([
                 map.setCenter(lon, lat, 15);
 
                 map.addMarker("Ihre Position", lon, lat, '../../img/marker.png');
+                 */
             }
         });
         console.log(institution);
