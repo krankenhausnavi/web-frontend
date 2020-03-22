@@ -12,7 +12,7 @@ define([
         var posView = new PosView();
         $('#content').html(posView.render().el);
 
-        var map = new Map("map");
+        var map = new Map("hospital-map");
 
         map.setCenter(lon, lat, 15);
 
