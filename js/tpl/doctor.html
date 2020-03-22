@@ -15,9 +15,9 @@
         </div>
 
         <div class="d-block">
-            <span class="list-group-item">im Wartezimmer</span>
-            <span class="list-group-item">Telefonische Beratung</span>
-            <span class="list-group-item">Hausbesuch</span>
+            <% _.each(model.get("waiting_times"), function(time) { %>
+            <span class="list-group-item"><%time.type%></span>
+            <% }); %>
         </div>
     </div>
     <div class="table-responsive" >
