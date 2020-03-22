@@ -265,8 +265,10 @@ while ($row = $stmt->fetch()) {
         $poi['opening_hours'] = array();
     }
 
-    $max_available = random_int(10, 300);
-    $in_use = floor($max_available * random_int(1, 100)/100);
+    // $max_available = random_int(10, 300);
+    // $in_use = floor($max_available * random_int(1, 100)/100);
+    $in_use = 10;
+    $max_available = 100;
 
     if ($row['r_id'] !== null) {
         $poi['resources'] = array(
