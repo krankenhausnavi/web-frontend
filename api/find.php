@@ -155,7 +155,8 @@ $sql = <<<EOF
     LEFT JOIN opening_hours o ON i.id = o.institution_id
     LEFT JOIN resources r ON i.id = r.institution_id
     LEFT JOIN waiting_times w ON i.id = w.institution_id
-    WHERE lat >= ? AND lat <= ? AND lon >= ? AND lon <= ?;
+    WHERE lat BETWEEN ? AND ? AND lon BETWEEN ? AND ?
+    ORDER BY i.lon;
 EOF;
 
 
