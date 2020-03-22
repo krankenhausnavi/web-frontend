@@ -314,6 +314,8 @@ function results_format_geojson($results) {
     $features = array();
 
     foreach ($results as $poi) {
+        $type = $poi['type'];
+        $id = $poi['id'];
         $feature = array(
             'type' => 'Feature',
             'geometry' => array(
@@ -323,7 +325,16 @@ function results_format_geojson($results) {
                     $poi['latitude'],
                 )
             ),
-            'properties' => $poi
+            'properties' => array(
+                'Entferungn' => $poi['distance'],
+                'Name' => $poi['name'],
+                'Straße' => $poi['street'],
+                'PLZ' => $poi['postal_code'],
+                'Stadt' => $poi['city'],
+                'Webseite' => $poi['website'],
+                'Telefonnummer' => $poi['phone_number'],
+                "<a class=\"btn btn-info btn-block btn-lg\" href=\"https://krankenbett.wo-zu-finden.de/#detail/${type}/${id}\">&nbsp;Mehr Informationen</a>" => ''
+            )
         );
 
         $features[] = $feature;
