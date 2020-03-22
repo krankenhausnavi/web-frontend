@@ -3,6 +3,6 @@ define([
     'backbone'
 ], function(_, Backbone){
     return Backbone.Model.extend({
-        urlRoot: 'http://localhost:3000/dev/institutions'
+        urlRoot: 'http://krankenbett.wo-zu-finden.de/api/id.php'
     });
 });

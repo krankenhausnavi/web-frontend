@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77871485-b3d5-43b9-b875-b8eccc76a54a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/js/collections/pois.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/collections/pois.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/controllers/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controllers/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/models/poi.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/models/poi.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,18 +36,18 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/api" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api" />
+      <recent name="$PROJECT_DIR$/libs/material-kit" />
+      <recent name="$PROJECT_DIR$/js/tpl" />
+      <recent name="$PROJECT_DIR$/js/views" />
+      <recent name="$PROJECT_DIR$/js/controllers" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/libs/material-kit" />
       <recent name="$PROJECT_DIR$/libs" />
       <recent name="$PROJECT_DIR$/js" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/libs/material-kit" />
-      <recent name="$PROJECT_DIR$/js/tpl" />
-      <recent name="$PROJECT_DIR$/js/views" />
-      <recent name="$PROJECT_DIR$/js/controllers" />
-      <recent name="$PROJECT_DIR$/libs/openlayers" />
     </key>
   </component>
   <component name="RunManager">
@@ -78,7 +79,7 @@
       <updated>1584786734441</updated>
       <workItem from="1584786738720" duration="10545000" />
       <workItem from="1584830108110" duration="49000" />
-      <workItem from="1584830172708" duration="13260000" />
+      <workItem from="1584830172708" duration="13711000" />
     </task>
     <servers />
   </component>
