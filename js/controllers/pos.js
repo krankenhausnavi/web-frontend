@@ -29,7 +29,7 @@ define([
         map.addPois(
             "Ärzte",
             "https://krankenbett.wo-zu-finden.de/api/find.php?format=geojson&lon=" + lon + "&lat=" + lat + "&area=" + area + "&type=DOCTOR",
-                1,
+            2,
             '/img/doctor.png',
             '#0000ff'
         );

@@ -500,7 +500,7 @@
           onSelect: (feature) => {
             // Unselect feature to allow reclicking on POIs.
             this._poi_select_feature.unselect(feature);
-            return this._markerClick(feature, jQuery(`#${this.map_div}_marker_info`), this.handlers.feature.evt.clientX, this.handlers.feature.evt.clientY);
+            return this._markerClick(feature, jQuery(`#${this.map_div}_marker_info`));
           }
         };
         this._poi_select_feature = new OpenLayers.Control.SelectFeature([], options);
@@ -535,16 +535,8 @@
 
     // @param object modal
     //  Modal onto which display information.
-
-    // @param int posX
-    //  X-coordinate of the marker.
-    //  Relative to the top left corner of the viewport.
-
-    // @param int posY
-    //  Y-coordinate of the marker.
-    //  Relative to the top right corner of the viewport.
     //#
-    _markerClick(feature, modal, posX, posY) {
+    _markerClick(feature, modal) {
       var j, len, poi, ref, table_div;
       // Find marker table in given dialog.
       table_div = modal.find('.markerTable');

@@ -520,8 +520,6 @@ class window.Map
                     @_markerClick(
                         feature
                         jQuery("##{@map_div}_marker_info")
-                        `this.handlers.feature.evt.clientX`
-                        `this.handlers.feature.evt.clientY`
                     )
             @_poi_select_feature = new OpenLayers.Control.SelectFeature([], options)
             @_ol_map.addControl(@_poi_select_feature)
@@ -554,16 +552,8 @@ class window.Map
     #
     # @param object modal
     #  Modal onto which display information.
-    #
-    # @param int posX
-    #  X-coordinate of the marker.
-    #  Relative to the top left corner of the viewport.
-    #
-    # @param int posY
-    #  Y-coordinate of the marker.
-    #  Relative to the top right corner of the viewport.
     ##
-    _markerClick: (feature, modal, posX, posY) ->
+    _markerClick: (feature, modal) ->
         # Find marker table in given dialog.
         table_div = modal.find('.markerTable')
 
