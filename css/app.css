@@ -121,6 +121,11 @@ body {
     margin-left: 10px;
 }
 
+#address {
+    color: #fff;
+    font-size: 18px;
+}
+
 .section-basic h3 {
     text-align: center;
 }
