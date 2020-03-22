@@ -11,9 +11,10 @@ define([
 ], function ($, _, Backbone, DetailView, DoctorView, HospitalView, PoiModel) {
     return function (type, id) {
         var self = this;
-        var institution = new PoiModel({ id: id });
+        var institution = new PoiModel();
 
         institution.fetch({
+            data: $.param({ "id": id}),
             success: function () {
                 var detailView = new DetailView({model: institution});
                 $('#content').html(detailView.render().el);

@@ -82,5 +82,55 @@
 }
 
 .page-header {
-    height: 800px !important;
+    height: 600px !important;
+}
+
+@media screen and (max-width: 1024px) {
+    #nav-address {
+        display: none;
+    }
+
+    #nav-search {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #nav-locate-btn {
+        display: none;
+    }
+}
+
+html, body {
+    overflow-x: hidden;
+}
+body {
+    position: relative
+}
+
+#start-header-container {
+    text-align: center;
+}
+
+#start-header-container .col-md-2 {
+    margin: auto 0;
+    font-size: 24px;
+}
+
+#start-search-btn {
+    margin-left: 10px;
+}
+
+.section-basic h3 {
+    text-align: center;
+}
+
+#start-about-section .col-sm-4 {
+    margin-bottom: 90px;
+}
+
+@media screen and (max-width: 500px) {
+    #start-header-container .col-md-2 {
+        margin: 30px 0;
+    }
 }

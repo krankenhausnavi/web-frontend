@@ -26,6 +26,9 @@ require.config({
         initBootstrap : "initBootstrap"
     },
     shim: {
+        popper: {
+            deps: ["jquery"]
+        },
         bootstrap: {
             deps: ["jquery"]
         },
@@ -33,7 +36,7 @@ require.config({
             deps: ["select2"]
         },
         map: {
-            deps: ["OpenLayers", "materialkit"]
+            deps: ["OpenLayers", "materialkit", "jquery", "popper"]
         },
         circle: {
             deps: ["OpenLayers"]

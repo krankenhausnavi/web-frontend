@@ -1,48 +1,79 @@
+
 <div class="page-header header-filter clear-filter start-bg-filter" data-parallax="true" style="background-image: url(img/krankentransport.jpg); transform: translate3d(0px, 0px, 0px);">
-    <div class="container">
+    <div class="container" id="start-header-container">
         <div class="row">
             <div class="col-md-12 ml-auto mr-auto">
                 <div class="brand start-brand">
-                    <h1>Der Krankentransport Navigator</h1>
+                    <h1>Der Kranken&shy;transport Navigator</h1>
                     <h3>Schnell, finde das letzte freie Krankenhaus in deiner Nähe!</h3>
                 </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 40px">
+            <div class="col-md-5 ml-auto mr-auto">
+                <div class="input-group">
+                    <input id="address" type="text" class="form-control mb-2 ui-autocomplete-input" placeholder="Straße, PLZ, Ort" autocomplete="off">
+                    <div class="input-group-append" id="start-search-btn">
+                        <button id="search" class="btn btn-primary address" type="button">
+                            <i class="material-icons">search</i>
+                            Suchen
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 ml-auto mr-auto">
+                oder
+            </div>
+
+            <div class="col-md-5 ml-auto mr-auto">
+                <button class="btn btn-primary" id="locate" type="button">
+                    <i class="material-icons">location_on</i>
+                    in der Nähe meines Standorts suchen
+                </button>
             </div>
         </div>
     </div>
 </div>
 
-<div class="main main-raised">
-    <div class="section section-basic">
-        <div class="container">
-
-            <div class="form-group bmd-form-group">
-                <div class="title">
-                    <span class="h3">Adresse suchen<br>
-                        <small>Finde Ärzte und Krankenhäuser mit freien Betten in der Nähe einer Adresse</small>
-                    </span>
+<div class="container-fluid" id="start-about-section">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="main main-raised">
+                <div class="section section-basic">
+                    <div class="container">
+                        <h3>Für Krankentransporte</h3>
+                        <p>
+                            Finde Ärzte und Krankenhäuser mit freien Betten in meiner Nähe
+                        </p>
+                    </div>
                 </div>
-
-                <input id="address" type="text" class="form-control" placeholder="Straße, PLZ, Ort">
-                <button id="search" class="btn btn-primary address" type="button" id="button-addon2">
-                    <i class="material-icons">search</i>
-                    Suchen
-                </button>
             </div>
-
-            <div class="form-group bmd-form-group">
-                <div class="title">
-                    <span class="h3">In meiner Nähe<br>
-                        <small>Finde Ärzte und Krankenhäuser mit freien Betten in meiner Nähe</small>
-                    </span>
+        </div>
+        <div class="col-sm-4">
+            <div class="main main-raised">
+                <div class="section section-basic">
+                    <div class="container">
+                        <h3>Für Ärzte</h3>
+                        <p>
+                            Finde Ärzte und Krankenhäuser mit freien Betten in meiner Nähe
+                        </p>
+                    </div>
                 </div>
-                <button class="btn btn-primary" id="locate" type="button">
-                    <i class="material-icons">location_on</i>
-                    Ärzte und Krankenhäuser in meiner Nähe
-                </button>
             </div>
-
-            <input type="hidden" id="area" value="20"></input>
-
+        </div>
+        <div class="col-sm-4">
+            <div class="main main-raised">
+                <div class="section section-basic">
+                    <div class="container">
+                        <h3>Für den Rettungsdienst</h3>
+                        <p>
+                            Finde Ärzte und Krankenhäuser mit freien Betten in meiner Nähe
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
