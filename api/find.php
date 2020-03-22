@@ -319,31 +319,31 @@ function results_format_geojson($results) {
 
         $properties = array();
 
-        if (!empty($poi['website']) {
+        if (!empty($poi['website'])) {
             $properties['Webseite'] = $poi['website'];
         }
 
-        if (!empty($poi['phone_number']) {
+        if (!empty($poi['phone_number'])) {
             $properties['Telefonnummer'] = $poi['phone_number'];
         }
 
-        if (!empty($poi['street']) {
+        if (!empty($poi['street'])) {
             $properties['Straße'] = $poi['street'];
         }
 
-        if (!empty($poi['name']) {
+        if (!empty($poi['name'])) {
             $properties['Name'] = $poi['name'];
         }
 
-        if (!empty($poi['postal_code']) {
+        if (!empty($poi['postal_code'])) {
             $properties['PLZ'] = $poi['postal_code'];
         }
 
-        if (!empty($poi['city']) {
+        if (!empty($poi['city'])) {
             $properties['Stadt'] = $poi['city'];
         }
 
-        if (!empty($poi['website']) {
+        if (!empty($poi['website'])) {
             $properties['Webseite'] = $poi['website'];
         }
 
