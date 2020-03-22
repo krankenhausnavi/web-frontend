@@ -266,13 +266,13 @@ while ($row = $stmt->fetch()) {
     }
 
     $max_available = random_int(10, 300);
-    $in_use = $max_available * random_int(1, 100)/100;
+    $in_use = floor($max_available * random_int(1, 100)/100);
 
     if ($row['r_id'] !== null) {
         $poi['resources'] = array(
             $row['r_id'] => array(
                 'type' => $row['r_resource_type'],
-                'in_use' => $row['r_max_capacity'] - $row['r_current_capacity'],
+                'in_use' => $in_use,
                 'max_available' => $max_available,
                 'last_update' => $in_use,
             )
