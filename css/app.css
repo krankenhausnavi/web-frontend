@@ -139,6 +139,10 @@ body {
     padding: 15px 0 20px 0;
 }
 
+#start-about-section .start-img-container {
+    text-align: center;
+}
+
 #start-about-section h3 {
     font-weight: bolder;
     margin: 20px 0 20px 0;
