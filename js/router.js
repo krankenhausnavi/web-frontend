@@ -10,8 +10,7 @@ define([
         routes: {
             "start": "start",
             "pos/:lat/:lon/:area": "pos",
-            "detail/:id/DOCTOR": "detail",
-            "detail/:id/HOSPITAL": "detail"
+            "detail/:type/:id": "detail"
         },
 
         start: StartController,
