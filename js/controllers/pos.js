@@ -6,9 +6,14 @@ define([
     'views/poislist',
     'collections/pois',
     'map',
+    'circle',
     'geocode'
 ], function ($, _, Backbone, PosView, PoisListView, PoisCollection) {
     return function (lon, lat, area) {
+        lon = parseFloat(lon);
+        lat = parseFloat(lat);
+        area = parseInt(area);
+
         var posView = new PosView();
         $('#content').html(posView.render().el);
 
@@ -18,12 +23,16 @@ define([
 
         map.addMarker("Ihre Position", lon, lat, '../../img/marker.png');
 
+        var searcharea = map.addShapes('Suchbereich', ["CIRCLE (" + lon + " " + lat + " " + (area*1000) + ")"]);
+
+        map.zoomToExtent(searcharea);
+
         var poisCollection = new PoisCollection();
 
         poisCollection.fetch({
             data: $.param({ "lon": lon, "lat": lat, "area": area}),
             success: function(data) {
-                var poisListView = new PoisListView({ collection: poisCollection });
+                var poisListView = new PoisListView({ collection: poisCollection, area: area });
                 $('#poislist').html(poisListView.render().el);
             }
         });

@@ -6,6 +6,7 @@ define([
     'views/poislist',
     'collections/pois',
     'map',
+    'circle',
     'geocode'
 ], function ($, _, Backbone, StartView, PoisListView, PoisCollection) {
     return function () {

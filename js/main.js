@@ -14,6 +14,7 @@ require.config({
         jqueryui: '../libs/jquery-ui/jquery-ui',
         OpenLayers: '../libs/openlayers/OpenLayers',
         map: 'map/map',
+        circle: 'map/circle',
         address_field: 'map/address_field',
         geocode: 'map/geocode',
         popper: '../libs/material-kit/js/core/popper.min',
@@ -32,6 +33,9 @@ require.config({
             deps: ["select2"]
         },
         map: {
+            deps: ["OpenLayers", "materialkit"]
+        },
+        circle: {
             deps: ["OpenLayers"]
         },
         address_field: {

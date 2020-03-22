@@ -80,3 +80,7 @@
 .start-brand {
     padding: 10px 50px;
 }
+
+.page-header {
+    height: 800px !important;
+}

@@ -1,23 +1,34 @@
 <div class="nearest-resource-list container">
-    <h1 class="mt-1">geeignete Krankenhäuser in deiner Nähe</h1>
+    <h1 class="mt-1 h3">
+        <%- _.filter(collection.models, function (a) { return a.get('type') == 'HOSPITAL'; }).length %> Krankenhäuser
+        und
+        <%- _.filter(collection.models, function (a) { return a.get('type') == 'HOSPITAL'; }).length %> Ärzte
+        in der Umgebung von <%- area %>km gefunden</h1>
     <div class="list-group">
         <% _.each(collection.models, function(poi) { %>
-            <a class="list-group-item" href="/#detail/<%- poi.get("type") %>/<%- poi.get("id") %>">
-                <div class=row>
-                    <div class="col-3 col-lg-1">
-                        <img src="/img/ampel.png" width="32" height="37">
-                        <span class="badge">X km</span>
-                    </div>
-                    <div class="col-6 my-auto">
-                        <span><%- poi.get("name") %></span>
-                    </div>
-                    <div class="col-6 my-auto">
-                            <span><%- poi.get("street") %></span>
-                    </div>
-                    <div class="col-6 my-auto">
-                            <span><%- poi.get("comment") %></span>
-                    </div>
+            <a href="/#detail/<%- poi.get('type') %>/<%- poi.get('id') %>" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <span>
+                        <span class="h5 mb-1">
+                            <% var random = Math.floor(Math.random() * 10); %>
+                            <% if (random == 1) { %>
+                                <i class="material-icons text-danger mr-0">error</i>
+                            <% } else if (random == 2) { %>
+                                <i class="material-icons text-warning mr-0">warning</i>
+                            <% } else { %>
+                                <i class="material-icons text-success mr-0">check</i>
+                            <% } %>
+                            <%- poi.get("name") %>
+                        </span>
+                    </span>
+                    <small>X km</small>
                 </div>
+                <p class="mb-1">
+                    <%- poi.get("street") %>
+                    <% if (poi.get("comment") != "") { %>
+                        <br><small><%- poi.get("comment") %></small>
+                    <% } %>
+                </p>
             </a>
         <% }); %>
     </div>
