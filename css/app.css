@@ -84,3 +84,19 @@
 .page-header {
     height: 800px !important;
 }
+
+@media screen and (max-width: 1024px) {
+    #nav-address {
+        display: none;
+    }
+
+    #nav-search {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #nav-locate-btn {
+        display: none;
+    }
+}

@@ -16,26 +16,21 @@
     <link rel="stylesheet" href="css/map.css">
 
     <script data-main="js/main" src="libs/require/require.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
 <nav class="navbar navbar-default navbar-expand-lg" style="margin-bottom: 0" role="navigation-demo">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-translate">
-            <a class="navbar-brand" href="#start">Der Krankentransport-Navigator</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-            </ul>
-        </div><!-- /.navbar-collapse -->
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#start">Krankentransport-Navigator</a>
+        <input style="flex-grow: 1" id="nav-address" type="text" class="form-control" placeholder="Straße, PLZ, Ort">
+        <button id="nav-search" type="submit" class="btn btn-raised btn-fab btn-round">
+            <i class="material-icons">search</i>
+        </button>
+        <button id="nav-locate-btn" class="ml-2 btn btn-rose btn-raised btn-round" type="button" data-toggle="dropdown">
+            <i class="material-icons">location_on</i>
+            In meiner Umgebung
+        </button>
     </div><!-- /.container-->
 </nav>
 
