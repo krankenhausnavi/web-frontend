@@ -147,14 +147,14 @@ $sql = <<<EOF
         r.max_capacity AS r_max_capacity,
         r.current_capacity AS r_current_capacity,
         r.timestamp AS r_timestamp,
-    w.id AS w_id,
-    w.service_type AS w_service_type,
-    w.waiting_time AS w_waiting_time,
-    w.timestamp AS w_timestamp
+        w.id AS w_id,
+        w.service_type AS w_service_type,
+        w.waiting_time AS w_waiting_time,
+        w.timestamp AS w_timestamp
     FROM institutions i
     LEFT JOIN opening_hours o ON i.id = o.institution_id
     LEFT JOIN resources r ON i.id = r.institution_id
-    LEFT JOIN waiting_times w ON w.id = w.institution_id
+    LEFT JOIN waiting_times w ON i.id = w.institution_id
     WHERE lat >= ? AND lat <= ? AND lon >= ? AND lon <= ?;
 EOF;
 
@@ -207,7 +207,7 @@ while ($row = $stmt->fetch()) {
 
     if ($row['w_id'] !== null) {
         $poi['waiting_times'] = array(
-            $row['r_id'] => array(
+            $row['w_id'] => array(
                 'type' => $row['w_service_type'],
                 'waiting_time' => $row['w_waiting_time'],
                 'last_update' => $row['w_timestamp'],
