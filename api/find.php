@@ -316,6 +316,37 @@ function results_format_geojson($results) {
     foreach ($results as $poi) {
         $type = $poi['type'];
         $id = $poi['id'];
+
+        $properties = array();
+
+        if (!empty($poi['website']) {
+            $properties['Webseite'] = $poi['website'];
+        }
+
+        if (!empty($poi['phone_number']) {
+            $properties['Telefonnummer'] = $poi['phone_number'];
+        }
+
+        if (!empty($poi['street']) {
+            $properties['Straße'] = $poi['street'];
+        }
+
+        if (!empty($poi['name']) {
+            $properties['Name'] = $poi['name'];
+        }
+
+        if (!empty($poi['postal_code']) {
+            $properties['PLZ'] = $poi['postal_code'];
+        }
+
+        if (!empty($poi['city']) {
+            $properties['Stadt'] = $poi['city'];
+        }
+
+        if (!empty($poi['website']) {
+            $properties['Webseite'] = $poi['website'];
+        }
+
         $feature = array(
             'type' => 'Feature',
             'geometry' => array(
@@ -325,16 +356,7 @@ function results_format_geojson($results) {
                     $poi['latitude'],
                 )
             ),
-            'properties' => array(
-                'Entferungn' => $poi['distance'],
-                'Name' => $poi['name'],
-                'Straße' => $poi['street'],
-                'PLZ' => $poi['postal_code'],
-                'Stadt' => $poi['city'],
-                'Webseite' => $poi['website'],
-                'Telefonnummer' => $poi['phone_number'],
-                "<a class=\"btn btn-info btn-block btn-lg\" href=\"https://krankenbett.wo-zu-finden.de/#detail/${type}/${id}\">&nbsp;Mehr Informationen</a>" => ''
-            )
+            'properties' => $properties
         );
 
         $features[] = $feature;
