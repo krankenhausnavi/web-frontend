@@ -241,7 +241,7 @@ while ($row = $stmt->fetch()) {
         'postal_code' => $row['i_postcode'],
         'phone_number' => $row['i_phone'],
         'website' => $row['i_website'],
-        'logitude' => $row['i_lon'],
+        'longitude' => $row['i_lon'],
         'latitude' => $row['i_lat'],
         'comment' => $row['i_comment'],
      );
