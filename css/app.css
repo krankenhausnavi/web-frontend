@@ -133,6 +133,10 @@ body {
     #start-header-container .col-md-2 {
         margin: 30px 0;
     }
+
+    #content .page-header {
+        margin-bottom: 120px;
+    }
 }
 
 #start-about-section .section-basic {
