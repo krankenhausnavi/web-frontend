@@ -231,6 +231,13 @@ while ($row = $stmt->fetch()) {
         continue;
     }
 
+    // If type parameter is set then only process rows with correct rows.
+    if (!empty($_GET['type'])) {
+        if (strtoupper($row['i_type'])  != strtoupper($_GET['type'])) {
+            continue;
+        }
+    }
+
     $poi = array(
         'id' => $row['i_id'],
         'distance' => $distance,

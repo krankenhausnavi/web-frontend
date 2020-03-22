@@ -19,11 +19,19 @@ define([
         map.addMarker("Ihre Position", lon, lat, '../../img/marker.png');
 
         map.addPois(
-            "Krankenhäuser und Ärzte",
-            "https://krankenbett.wo-zu-finden.de/api/find.php?format=geojson&lon=" + lon + "&lat=" + lat + "&area=" + area,
+            "Krankenhäuser",
+            "https://krankenbett.wo-zu-finden.de/api/find.php?format=geojson&lon=" + lon + "&lat=" + lat + "&area=" + area + "&type=HOSPITAL",
             1,
-            '/img/marker.png',
-            '#BF0000'
+            '/img/hospital.png',
+            '#ff0000'
+        );
+
+        map.addPois(
+            "Ärzte",
+            "https://krankenbett.wo-zu-finden.de/api/find.php?format=geojson&lon=" + lon + "&lat=" + lat + "&area=" + area + "&type=DOCTOR",
+                1,
+            '/img/doctor.png',
+            '#0000ff'
         );
 
         var poisCollection = new PoisCollection();
