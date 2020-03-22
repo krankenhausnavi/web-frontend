@@ -70,6 +70,12 @@ $lat = $_GET['lat'];
 $lon = $_GET['lon'];
 $area = $_GET['area'];
 
+$format = 'standard';
+
+if (!empty($_GET['format']) && $_GET['format'] == 'geojson') {
+    $format = 'geojson';
+}
+
 if (!is_numeric($lat) || !is_numeric($lon) || !is_numeric($area) || $lat < 0 || $lat > 180 || $lon < -90 || $lon > 90 || $area > 1000) {
     die('sanity check of parameters failed.');
 }
@@ -287,15 +293,45 @@ while ($row = $stmt->fetch()) {
 }
 
 function results_format_standard($results) {
-    $formated_results = array();
+    $formatted_results = array();
     foreach ($results as $poi) {
         $poi['opening_hours'] = array_values($poi['opening_hours']);
         $poi['resources'] = array_values($poi['resources']);
         $poi['waiting_times'] = array_values($poi['waiting_times']);
-        $formated_results[] = $poi;
+        $formatted_results[] = $poi;
     }
-    return $formated_results;
+    return $formatted_results;
+}
+
+function results_format_geojson($results) {
+    $features = array();
+
+    foreach ($results as $poi) {
+        $feature = array(
+            'type' => 'Feature',
+            'geometry' => array(
+                'type' => 'Point',
+                'coordinates' => array(
+                    $poi['longitude'],
+                    $poi['latitude'],
+                )
+            ),
+            'properties' => $poi
+        );
+
+        $features[] = $feature;
+    }
+
+    return array(
+        'type' => 'FeatureCollection',
+        'features' => $features
+    );
 }
 
 header('Content-Type: application/json');
-echo json_encode(results_format_standard($results));
+
+if ($format == 'geojson') {
+    echo json_encode(results_format_geojson($results));
+} else {
+    echo json_encode(results_format_standard($results));
+}
