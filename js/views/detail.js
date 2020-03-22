@@ -7,7 +7,7 @@ define([
     return Backbone.View.extend({
         render: function () {
             var compiledTemplate = _.template(DetailHtml);
-            this.$el.html(compiledTemplate());
+            this.$el.html(compiledTemplate({model: this.model}));
             return this;
         }
     });

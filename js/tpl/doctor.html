@@ -12,16 +12,33 @@
 <div class="">
     <h6>Öffnungszeiten: <span style="color: darkgreen;">geöffnet</span></h6>
     <ul>
-        <li>Montag:</li>
-        <li>Dienstag:</li>
-        <li>Mittwoch:</li>
-        <li>Donnertag:</li>
-        <li>Freitag:</li>
-        <li>Samstag:</li>
-        <li>Sontag:</li>
+        <li>Montag: 
+                <%- model.get("opening_hours")[0].start_time %> - 
+                <%- model.get("opening_hours")[0].end_time %>
+        </li>
+        <li>Dienstag:
+                <%- model.get("opening_hours")[0].start_time %> - 
+                <%- model.get("opening_hours")[0].end_time %>
+        </li>
+        <li>Mittwoch:
+                <%- model.get("opening_hours")[0].start_time %> - 
+                <%- model.get("opening_hours")[0].end_time %>
+        </li>
+        <li>Donnertag:
+                <%- model.get("opening_hours")[0].start_time %> - 
+                <%- model.get("opening_hours")[0].end_time %>
+        </li>
+        <li>Freitag:
+                <%- model.get("opening_hours")[0].start_time %> - 
+                <%- model.get("opening_hours")[0].end_time %>
+        </li>
+        <li>Samstag:
+                <%- model.get("opening_hours")[0].start_time %> - 
+                <%- model.get("opening_hours")[0].end_time %>
+        </li>
+        <li>Sontag:
+                <%- model.get("opening_hours")[0].start_time %> - 
+                <%- model.get("opening_hours")[0].end_time %>
+        </li>
     </ul>
-</div>
-<div class="">
-    <button type="button" class="btn btn-primary">Anrufen</button>
-    <span><%- model.get("phone_number") %></span>
 </div>

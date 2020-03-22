@@ -1,7 +1,10 @@
 <ul class="list-group">
-    <li class="list-group-item">Betten IPS-Beatmung:</li>
-    <li class="list-group-item">Betten IPS:</li>
-    <li class="list-group-item">Betten covid:</li>
-    <li class="list-group-item">Betten covid IPS</li>
-    <li class="list-group-item">ECMO</li>
+    <li class="list-group-item">Betten:
+            <%- model.get("resources")[0].in_use %> von 
+            <%- model.get("resources")[0].max_available %> belegt
+    </li>
+    <li class="list-group-item">Intensivbetten:
+            <%- model.get("resources")[1].in_use %> von 
+            <%- model.get("resources")[1].max_available %> belegt
+    </li>
 </ul>

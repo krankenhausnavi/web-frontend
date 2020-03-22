@@ -1,0 +1,36 @@
+{
+    "id": 1,
+    "name": "Arztpraxis 1",
+    "type": "DOCTOR",
+    "street": "ANYTHING ELSE",
+    "city": "ANY_CITY",
+    "postal_code": "POSTAL_CODE",
+    "phone_number": "123123131",
+    "website": "http://example.com",
+    "longitude": 32.99659895013735,
+    "latitude": 3.0245133799402684,
+    "comment": "Bitte nicht ohne Termin",
+    "opening_hours": [
+      {
+        "day": "MONTAG",
+        "start_time": "08:00",
+        "end_time": "12:00"
+      },
+      {
+        "day": "MONTAG",
+        "start_time": "12:00",
+        "end_time": "16:00"
+      }
+    ],
+    "resources": [
+      null,
+      null
+    ],
+    "waiting_times": [
+      {
+        "type": "Hausbesuch",
+        "waiting_time": "2 Tage",
+        "last_update": "Sun Mar 22 2020"
+      }
+    ]
+  }

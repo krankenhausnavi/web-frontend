@@ -11,12 +11,12 @@ define([
 ], function ($, _, Backbone, DetailView, DoctorView, HospitalView, PoiModel) {
     return function (type, id) {
         var self = this;
-        var detailView = new DetailView();
-        $('#content').html(detailView.render().el);
-
         var institution = new PoiModel({ id: id });
+
         institution.fetch({
             success: function () {
+                var detailView = new DetailView({model: institution});
+                $('#content').html(detailView.render().el);
                 //choose between displaying doctor or hospital details
                 if (type == 'DOCTOR') {
                     var doctorView = new DoctorView({model: institution});

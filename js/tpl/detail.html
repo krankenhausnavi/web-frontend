@@ -1,13 +1,17 @@
-
 <div class="container">
-    
+
     <div>
         <div class="d-inline">
-            <span class="h1" style="width: 100%;">Schwarzwaldklinik</span>
+            <span class="h1" style="width: 100%;"><%- model.get("name") %></span>
             <img src="/img/ampel.png" width="64">
-            <h6>Am Bergsee 18, 76448 Dorf im Schwarzwald</h6>
+            <h6><%- model.get("street") %>, <%- model.get("postal_code") %> <%- model.get("city") %></h6>
         </div>
         <div id="detail-content"></div>
+        <div class="">
+            <button type="button" class="btn btn-primary">Anrufen</button>
+            <span><%- model.get("phone_number") %></span>
+
+        </div>
     </div>
     <div class="largemap-wrapper main-row">
         <div class="largemap" id="map"></div>
