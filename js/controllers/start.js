@@ -18,9 +18,7 @@ define([
         enable_autocomplete_of_address($('#address'));
 
         $('#search').click(function () {
-            geocode_query($('#address').val(), function(lon, lat, zip) {
-                location.href = "#pos/" + lon + "/" + lat + "/" + 50;
-            });
+            location.href = "tel:021728216311"
         });
 
         $("#locate").click(function() {
