@@ -4,7 +4,7 @@ define([
     'models/poi'
 ], function(_, Backbone, PoiModel){
     return Backbone.Collection.extend({
-        url: 'http://localhost:3000/dev/institutions',
+        url: 'http://krankenbett.wo-zu-finden.de/api/find.php',
         model: PoiModel
     });
 });
