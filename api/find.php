@@ -6,6 +6,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+// I really, really should change the pw and move this.
+// At least the db is only accessible from localhost.
 $db_host = "localhost";
 $db_name = "krankenbett";
 $db_user = "krankenbett";
@@ -144,10 +146,15 @@ $sql = <<<EOF
         r.resource_type AS r_resource_type,
         r.max_capacity AS r_max_capacity,
         r.current_capacity AS r_current_capacity,
-        r.timestamp AS r_timestamp
+        r.timestamp AS r_timestamp,
+    w.id AS w_id,
+    w.service_type AS w_service_type,
+    w.waiting_time AS w_waiting_time,
+    w.timestamp AS w_timestamp
     FROM institutions i
     LEFT JOIN opening_hours o ON i.id = o.institution_id
     LEFT JOIN resources r ON i.id = r.institution_id
+    LEFT JOIN waiting_times w ON w.id = w.institution_id
     WHERE lat >= ? AND lat <= ? AND lon >= ? AND lon <= ?;
 EOF;
 
@@ -171,28 +178,51 @@ while ($row = $stmt->fetch()) {
         'logitude' => $row['i_lon'],
         'latitude' => $row['i_lat'],
         'comment' => $row['i_comment'],
-        'opening_hours' => array(
+     );
+
+    if ($row['o_id'] !== null) {
+        $poi['opening_hours'] = array(
             $row['o_id'] => array(
                 'day' => $row['o_day'],
                 'start_time' => $row['o_start_time'],
                 'end_time' => $row['o_end_time'],
             ),
-        ),
-        'resources' => array(
+        );
+    } else {
+        $poi['opening_hours'] = array();
+    }
+
+    if ($row['r_id'] !== null) {
+        $poi['resources'] = array(
             $row['r_id'] => array(
                 'type' => $row['r_resource_type'],
                 'max_available' => $row['r_max_capacity'],
-                'in_use' => $row['r_max_capacity'] - $row['r_current_capacity'],
+                'in_use' => $row['r_current_capacity'],
                 'last_update' => $row['r_timestamp'],
             )
-        )
-    );
+        );
+    }  else {
+        $poi['resources'] = array();
+    }
+
+    if ($row['w_id'] !== null) {
+        $poi['waiting_times'] = array(
+            $row['r_id'] => array(
+                'type' => $row['w_service_type'],
+                'waiting_time' => $row['w_waiting_time'],
+                'last_update' => $row['w_timestamp'],
+            )
+        );
+    } else {
+        $poi['waiting_times'] = array();
+    }
 
     if (empty($results[$id])) {
         $results[$id] = $poi;
     } else {
         $results[$id]['opening_hours'] += $poi['opening_hours'];
         $results[$id]['resources'] += $poi['resources'];
+        $results[$id]['waiting_times'] += $poi['waiting_times'];
     }
 }
 
@@ -201,6 +231,7 @@ function results_format_standard($results) {
     foreach ($results as $poi) {
         $poi['opening_hours'] = array_values($poi['opening_hours']);
         $poi['resources'] = array_values($poi['resources']);
+        $poi['waiting_times'] = array_values($poi['waiting_times']);
         $formated_results[] = $poi;
     }
     return $formated_results;
