@@ -19,13 +19,13 @@ define([
 
         $('#search').click(function () {
             geocode_query($('#address').val(), function(lon, lat, zip) {
-                location.href = "#pos/" + lon + "/" + lat + "/" + $('#area').val();
+                location.href = "#pos/" + lon + "/" + lat + "/" + 50;
             });
         });
 
         $("#locate").click(function() {
             navigator.geolocation.getCurrentPosition(function(position) {
-                location.href = "#pos/" + position.coords.longitude + "/" + position.coords.latitude + "/" + $('#area').val();
+                location.href = "#pos/" + position.coords.longitude + "/" + position.coords.latitude + "/" + 50;
             });
         });
     }

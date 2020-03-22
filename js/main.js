@@ -26,6 +26,9 @@ require.config({
         initBootstrap : "initBootstrap"
     },
     shim: {
+        popper: {
+            deps: ["jquery"]
+        },
         bootstrap: {
             deps: ["jquery"]
         },
