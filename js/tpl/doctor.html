@@ -1,50 +1,122 @@
-<ul class="list-group">
-    <li class="list-group-item">
-        <i class="fa fa-plus-square"  style="margin-right: 0.5em;" aria-hidden="true"></i>
-        Teststelle:</li>
-    <li class="list-group-item">
-            <i class="fas fa-home" style="margin-right: 0.5em;"></i>
-        Hausbesuche möglich:</li>
-    <li class="list-group-item">
-        <i class="fas fa-clock" style="margin-right: 0.5em;"></i>
-        Wartezeiten:
-        <ul>
-            <li>im Wartezimmer</li>
-            <li>Telefonische Beratung</li>
-            <li>Hausbesuch</li>
-        </ul>
-    </li>
-</ul>
-<div class="">
-    <h6>Öffnungszeiten: <span style="color: darkgreen;">geöffnet</span></h6>
-    <ul>
-        <li>Montag: 
-                <%- model.get("opening_hours")[0].start_time %> - 
-                <%- model.get("opening_hours")[0].end_time %>
-        </li>
-        <li>Dienstag:
-                <%- model.get("opening_hours")[0].start_time %> - 
-                <%- model.get("opening_hours")[0].end_time %>
-        </li>
-        <li>Mittwoch:
-                <%- model.get("opening_hours")[0].start_time %> - 
-                <%- model.get("opening_hours")[0].end_time %>
-        </li>
-        <li>Donnertag:
-                <%- model.get("opening_hours")[0].start_time %> - 
-                <%- model.get("opening_hours")[0].end_time %>
-        </li>
-        <li>Freitag:
-                <%- model.get("opening_hours")[0].start_time %> - 
-                <%- model.get("opening_hours")[0].end_time %>
-        </li>
-        <li>Samstag:
-                <%- model.get("opening_hours")[0].start_time %> - 
-                <%- model.get("opening_hours")[0].end_time %>
-        </li>
-        <li>Sontag:
-                <%- model.get("opening_hours")[0].start_time %> - 
-                <%- model.get("opening_hours")[0].end_time %>
-        </li>
-    </ul>
+<div class="list-group">
+    <div class="list-group-item">
+        <i class="fa fa-plus-square" style="margin-right: 0.5em;" aria-hidden="true"></i>
+        Teststelle:
+        <i class="fas fa-check" style="margin-left: 0.5em;"></i></div>
+    <div class="list-group-item">
+        <i class="fas fa-home" style="margin-right: 0.5em;"></i>
+        Hausbesuche möglich:
+        <i class="fas fa-check" style="margin-left: 0.5em;"></i>
+    </div>
+    <div class="list-group-item">
+        <div style="width: 100%;">
+            <i class="fas fa-clock" style="margin-right: 0.5em;"></i>
+            Wartezeiten:
+        </div>
+
+        <div class="d-block">
+            <span class="list-group-item">im Wartezimmer</span>
+            <span class="list-group-item">Telefonische Beratung</span>
+            <span class="list-group-item">Hausbesuch</span>
+        </div>
+    </div>
+    <div class="table-responsive" >
+        <table class="table w-auto" style="max-width: 600px">
+            <thead>
+                <tr>
+                    <th scope="col">Öffnungszeiten Sprechstunde<br>
+                        <span style="color: darkgreen;">geöffnet</span>
+                    </th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody class="">
+                <tr>
+                    <td>Montag</td>
+                    <td><%- model.get("opening_hours")[0].start_time %> -
+                        <%- model.get("opening_hours")[0].end_time %></td>
+                </tr>
+                <tr>
+                    <td>Dienstag</td>
+                    <td><%- model.get("opening_hours")[0].start_time %> -
+                        <%- model.get("opening_hours")[0].end_time %></td>
+                </tr>
+                <tr>
+                    <td>Mittwoch</td>
+                    <td><%- model.get("opening_hours")[0].start_time %> -
+                        <%- model.get("opening_hours")[0].end_time %></td>
+                </tr>
+                <tr>
+                    <td>Donnerstag</td>
+                    <td><%- model.get("opening_hours")[0].start_time %> -
+                        <%- model.get("opening_hours")[0].end_time %></td>
+                </tr>
+                <tr>
+                    <td>Freitag</td>
+                    <td><%- model.get("opening_hours")[0].start_time %> -
+                        <%- model.get("opening_hours")[0].end_time %></td>
+                </tr>
+                <tr>
+                    <td>Samstag</td>
+                    <td><%- model.get("opening_hours")[0].start_time %> -
+                        <%- model.get("opening_hours")[0].end_time %></td>
+                </tr>
+                <tr>
+                    <td>Sonntag</td>
+                    <td><%- model.get("opening_hours")[0].start_time %> -
+                        <%- model.get("opening_hours")[0].end_time %></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-responsive" >
+            <table class="table w-auto" style="max-width: 600px">
+                <thead>
+                    <tr>
+                        <th scope="col">Öffnungszeiten Hausbesuche<br>
+                            <span style="color: darkgreen;">geöffnet</span>
+                        </th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody class="">
+                    <tr>
+                        <td>Montag</td>
+                        <td><%- model.get("opening_hours")[0].start_time %> -
+                            <%- model.get("opening_hours")[0].end_time %></td>
+                    </tr>
+                    <tr>
+                        <td>Dienstag</td>
+                        <td><%- model.get("opening_hours")[0].start_time %> -
+                            <%- model.get("opening_hours")[0].end_time %></td>
+                    </tr>
+                    <tr>
+                        <td>Mittwoch</td>
+                        <td><%- model.get("opening_hours")[0].start_time %> -
+                            <%- model.get("opening_hours")[0].end_time %></td>
+                    </tr>
+                    <tr>
+                        <td>Donnerstag</td>
+                        <td><%- model.get("opening_hours")[0].start_time %> -
+                            <%- model.get("opening_hours")[0].end_time %></td>
+                    </tr>
+                    <tr>
+                        <td>Freitag</td>
+                        <td><%- model.get("opening_hours")[0].start_time %> -
+                            <%- model.get("opening_hours")[0].end_time %></td>
+                    </tr>
+                    <tr>
+                        <td>Samstag</td>
+                        <td><%- model.get("opening_hours")[0].start_time %> -
+                            <%- model.get("opening_hours")[0].end_time %></td>
+                    </tr>
+                    <tr>
+                        <td>Sonntag</td>
+                        <td><%- model.get("opening_hours")[0].start_time %> -
+                            <%- model.get("opening_hours")[0].end_time %></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 </div>

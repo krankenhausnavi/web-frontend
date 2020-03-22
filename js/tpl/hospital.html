@@ -1,14 +1,18 @@
-<ul class="list-group">
-    <li class="list-group-item">
+<div class="list-group">
+    <div class="list-group-item">
         <i class="fa fa-bed" aria-hidden="true" style="margin-right: 0.5em;"></i>
         Betten:
         <%- model.get("resources")[0].in_use %> von 
         <%- model.get("resources")[0].max_available %> belegt
-    </li>
-    <li class="list-group-item">
+    </div>
+    <div class="list-group-item">
         <i class="fa fa-bed" aria-hidden="true" style="margin-right: 0.5em;"></i>
         Intensivbetten:
         <%- model.get("resources")[1].in_use %> von 
         <%- model.get("resources")[1].max_available %> belegt
-    </li>
-</ul>
+    </div>
+    <div class="list-group-item">
+            <i class="fa fa-plus-square" style="margin-right: 0.5em;" aria-hidden="true"></i>
+            Teststelle:
+            <i class="fas fa-check" style="margin-left: 0.5em;"></i></div>
+</div>
