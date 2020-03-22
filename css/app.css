@@ -107,3 +107,11 @@ html, body {
 body {
     position: relative
 }
+
+#start-header-container {
+    text-align: center;
+}
+
+#start-search-btn {
+    margin-left: 10px;
+}
