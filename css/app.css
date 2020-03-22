@@ -112,6 +112,25 @@ body {
     text-align: center;
 }
 
+#start-header-container .col-md-2 {
+    margin: auto 0;
+    font-size: 24px;
+}
+
 #start-search-btn {
     margin-left: 10px;
+}
+
+.section-basic h3 {
+    text-align: center;
+}
+
+#start-about-section .col-sm-4 {
+    margin-bottom: 90px;
+}
+
+@media screen and (max-width: 500px) {
+    #start-header-container .col-md-2 {
+        margin: 30px 0;
+    }
 }
