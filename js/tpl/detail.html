@@ -2,9 +2,15 @@
 
     <div>
         <div class="d-inline">
-            <span class="h1" style="width: 100%;"><%- model.get("name") %></span>
+            <span class="h1" style="width: 100%;">
+                <i class="fa fa-plus-square" aria-hidden="true"></i>
+                <%- model.get("name") %></span>
             <img src="/img/ampel.png" width="64">
-            <h6><%- model.get("street") %>, <%- model.get("postal_code") %> <%- model.get("city") %></h6>
+            <h6>
+                <i class="fa fa-map-marker " aria-hidden="true"></i> 
+                <%- model.get("street") %>, 
+                <%- model.get("postal_code") %> 
+                <%- model.get("city") %></h6>
         </div>
         <div id="detail-content"></div>
         <div class="">
