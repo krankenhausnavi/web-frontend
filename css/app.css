@@ -134,3 +134,12 @@ body {
         margin: 30px 0;
     }
 }
+
+#start-about-section .section-basic {
+    padding: 15px 0 20px 0;
+}
+
+#start-about-section h3 {
+    font-weight: bolder;
+    margin: 20px 0 20px 0;
+}
