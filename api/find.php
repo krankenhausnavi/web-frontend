@@ -231,6 +231,13 @@ while ($row = $stmt->fetch()) {
         continue;
     }
 
+    // If type parameter is set then only process rows with correct rows.
+    if (!empty($_GET['type'])) {
+        if (strtoupper($row['i_type'])  != strtoupper($_GET['type'])) {
+            continue;
+        }
+    }
+
     $poi = array(
         'id' => $row['i_id'],
         'distance' => $distance,
@@ -258,13 +265,18 @@ while ($row = $stmt->fetch()) {
         $poi['opening_hours'] = array();
     }
 
+    // $max_available = random_int(10, 300);
+    // $in_use = floor($max_available * random_int(1, 100)/100);
+    $in_use = 10;
+    $max_available = 100;
+
     if ($row['r_id'] !== null) {
         $poi['resources'] = array(
             $row['r_id'] => array(
                 'type' => $row['r_resource_type'],
-                'in_use' => $row['r_max_capacity'],
-                'max_available' => $row['r_current_capacity'],
-                'last_update' => $row['r_timestamp'],
+                'in_use' => $in_use,
+                'max_available' => $max_available,
+                'last_update' => $in_use,
             )
         );
     }  else {
@@ -307,6 +319,41 @@ function results_format_geojson($results) {
     $features = array();
 
     foreach ($results as $poi) {
+        $type = $poi['type'];
+        $id = $poi['id'];
+
+        $properties = array();
+
+        if (!empty($poi['website'])) {
+            $properties['Webseite'] = $poi['website'];
+        }
+
+        if (!empty($poi['phone_number'])) {
+            $properties['Telefonnummer'] = $poi['phone_number'];
+        }
+
+        if (!empty($poi['street'])) {
+            $properties['Straße'] = $poi['street'];
+        }
+
+        if (!empty($poi['name'])) {
+            $properties['Name'] = $poi['name'];
+        }
+
+        if (!empty($poi['postal_code'])) {
+            $properties['PLZ'] = $poi['postal_code'];
+        }
+
+        if (!empty($poi['city'])) {
+            $properties['Stadt'] = $poi['city'];
+        }
+
+        if (!empty($poi['website'])) {
+            $properties['Webseite'] = $poi['website'];
+        }
+
+        $properties["<a class=\"btn btn-info btn-block btn-lg\" href=\"https://krankenbett.wo-zu-finden.de/#detail/${type}/${id}\">&nbsp;Mehr Informationen</a>"] = "";
+
         $feature = array(
             'type' => 'Feature',
             'geometry' => array(
@@ -316,7 +363,7 @@ function results_format_geojson($results) {
                     $poi['latitude'],
                 )
             ),
-            'properties' => $poi
+            'properties' => $properties
         );
 
         $features[] = $feature;
