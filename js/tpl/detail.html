@@ -7,19 +7,42 @@
             <!--<img src="/img/ampel.png" width="64">-->
             <i class="material-icons text-success mr-0">check</i>
             <h6 class="pb-1">
-                <i class="fa fa-map-marker " aria-hidden="true"></i> 
-                <%- model.get("street") %>, 
-                <%- model.get("postal_code") %> 
+                <i class="fa fa-map-marker " aria-hidden="true"></i>
+                <%- model.get("street") %>,
+                <%- model.get("postal_code") %>
                 <%- model.get("city") %></h6>
         </div>
         <div class="main my-3 px-3 p-3">
-                <span><i class="fa fa-phone m-1" aria-hidden="true"></i><%- model.get("phone_number") %></span>
-                <button type="button" class="btn btn-primary ml-5">
-                        Anrufen 
-                    </button>
-                    <button type="button" class="btn btn-secondary ml-2">Navigieren</button>
-            </div>
+            <span><i class="fa fa-phone m-1" aria-hidden="true"></i><%- model.get("phone_number") %></span>
+            <button type="button" class="btn btn-primary ml-5">
+                Anrufen
+            </button>
+            <button type="button" class="btn btn-secondary ml-2">Navigieren</button>
+        </div>
         <div id="detail-content" class="main mb-5 pb-5"></div>
+        <div id="opening-hours" class="main mb-5 pb-5">
+            <div class="table-responsive">
+                <table class="table w-auto" style="max-width: 600px">
+                    <thead>
+                        <tr>
+                            <th scope="col">Öffnungszeiten<br>
+                                <span style="color: darkgreen;">geöffnet</span>
+                            </th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="">
+                        <% _.each(opening_hours, function(day) { %>
+                        <tr>
+                            <td><%- day.day %></td>
+                            <td><%- day.start_time %> -
+                                <%- day.end_time %></td>
+                        </tr>
+                        <% }); %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
     <div class="smallmap-wrapper main-row">
         <div class="largemap" id="map"></div>

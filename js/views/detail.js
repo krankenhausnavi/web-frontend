@@ -7,12 +7,8 @@ define([
     return Backbone.View.extend({
         render: function () {
             var compiledTemplate = _.template(DetailHtml);
-            var times = this.model.get("waiting_times").collection;
-            console.log(times);
-            _.each(times, function(time) {
-                console.log(time.type);
-            });
-            this.$el.html(compiledTemplate({model: this.model}));
+            var openings = this.model.get("opening_hours");
+            this.$el.html(compiledTemplate({model: this.model, opening_hours: openings}));
             return this;
         }
     });

@@ -19,11 +19,11 @@ define([
                 var detailView = new DetailView({model: institution});
                 $('#content').html(detailView.render().el);
                 //choose between displaying doctor or hospital details
-                if (type == 'DOCTOR') {
+                if (type.toLowerCase() == 'doctor') {
                     var doctorView = new DoctorView({model: institution});
                     $('#detail-content').html(doctorView.render().el);
                 }
-                else if (type == 'HOSPITAL') {
+                else if (type.toLowerCase() == 'hospital') {
                     var hospitalView = new HospitalView({model: institution});
                     $('#detail-content').html(hospitalView.render().el);
                 }
