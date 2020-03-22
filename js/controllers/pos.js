@@ -12,16 +12,15 @@ define([
         var posView = new PosView();
         $('#content').html(posView.render().el);
 
-        var map = new Map("map");
+        var map = new Map("hospital-map");
 
         map.setCenter(lon, lat, 15);
 
         map.addMarker("Ihre Position", lon, lat, '../../img/marker.png');
 
         var poisCollection = new PoisCollection();
-        var areaTest= 0.1
         poisCollection.fetch({
-            data: $.param({ "lon": lon, "lat": lat, "area": areaTest}),
+            data: $.param({ "lon": lon, "lat": lat, "area": area}),
             success: function(data) {
                 var poisListView = new PoisListView({ collection: poisCollection });
                 $('#poislist').html(poisListView.render().el);
