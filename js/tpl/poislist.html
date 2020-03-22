@@ -19,9 +19,16 @@
                                 <i class="material-icons text-success mr-0">check</i>
                             <% } %>
                             <%- poi.get("name") %>
+                            <small class="ml-3">X km</small>
                         </span>
                     </span>
-                    <small>X km</small>
+                    <div class ="float-righ">
+                        
+                        <button type="button" class="btn btn-primary float-right">Anrufen</button>
+                        <button type="button" class="btn btn-secondary float-right mr-2">Navigieren</button>
+                        
+                    </div>
+                    
                 </div>
                 <p class="mb-1">
                     <%- poi.get("street") %>
