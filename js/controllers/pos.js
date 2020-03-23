@@ -41,7 +41,7 @@ define([
             $('#hospital-map_marker_info').modal('toggle');
             var type = $(this).attr('data-type');
             var id = $(this).attr('data-id');
-            location.href = "detail/" + type + "/" + id;
+            location.href = "#detail/" + type + "/" + id;
         });
 
         var poisCollection = new PoisCollection();
