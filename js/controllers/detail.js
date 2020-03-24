@@ -39,6 +39,5 @@ define([
                  */
             }
         });
-        console.log(institution);
     }
 });
