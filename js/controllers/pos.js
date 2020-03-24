@@ -16,13 +16,13 @@ define([
 
         map.setCenter(lon, lat, 15);
 
-        map.addMarker("Ihre Position", lon, lat, '../../img/marker.png');
+        map.addMarker("Ihre Position", lon, lat, '../../img/marker.svg');
 
         map.addPois(
             "Krankenhäuser",
             "https://krankenbett.wo-zu-finden.de/api/find.php?format=geojson&lon=" + lon + "&lat=" + lat + "&area=" + area + "&type=HOSPITAL",
             1,
-            '/img/hospital.png',
+            '/img/hospital.svg',
             '#ff0000'
         );
 
@@ -30,7 +30,7 @@ define([
             "Ärzte",
             "https://krankenbett.wo-zu-finden.de/api/find.php?format=geojson&lon=" + lon + "&lat=" + lat + "&area=" + area + "&type=DOCTOR",
             2,
-            '/img/doctor.png',
+            '/img/doctor.svg',
             '#0000ff'
         );
 
