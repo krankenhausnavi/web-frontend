@@ -29,10 +29,17 @@
                     </div>
                 </a>
                 <div class="col">
-                    <a class="btn btn-primary" href="tel:<%- poi.get('phone_number') %>">Anrufen</a>
-                    <a class="btn btn-secondary"
-                        href="https://www.google.com/maps/search/?api=1&query=<%- poi.get('latitude') %>,<%- poi.get('longitude') %>">
-                        Navigieren
+                    <a href="tel:<%- poi.get('phone_number') %>">
+                        <button type="button" class="btn btn-primary">
+                            <i class="material-icons">call</i>
+                            Anrufen
+                        </button>
+                    </a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=<%- poi.get('latitude') %>,<%- poi.get('longitude') %>">
+                        <button type="button" class="btn btn-secondary">
+                            <i class="material-icons">navigation</i>
+                            Navigieren
+                        </button>
                     </a>
                 </div>
             </div>
