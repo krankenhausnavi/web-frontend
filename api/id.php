@@ -177,8 +177,8 @@ while ($row = $stmt->fetch()) {
         $poi['resources'] = array(
             $row['r_id'] => array(
                 'type' => $row['r_resource_type'],
-                'max_available' => $row['r_max_capacity'],
-                'in_use' => $row['r_current_capacity'],
+                'max_available' => $row['r_current_capacity'],
+                'in_use' => $row['r_max_capacity'],
                 'last_update' => $row['r_timestamp'],
             )
         );
