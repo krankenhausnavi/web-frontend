@@ -6,38 +6,39 @@
         in der Umgebung von <%- area %>km gefunden</h1>
     <div class="list-group">
         <% _.each(collection.models, function(poi) { %>
-            <a href="/#detail/<%- poi.get('type') %>/<%- poi.get('id') %>" class="list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
+        <div class="list-group-item list-group-item-action">
+            <a href="/#detail/<%- poi.get('type') %>/<%- poi.get('id') %>">
+                <div class="d-flex w-100">
                     <span>
                         <span class="h5 mb-1">
                             <% var random = Math.floor(Math.random() * 10); %>
                             <% if (random == 1) { %>
-                                <i class="material-icons text-danger mr-0">error</i>
+                            <i class="material-icons text-danger mr-0">error</i>
                             <% } else if (random == 2) { %>
-                                <i class="material-icons text-warning mr-0">warning</i>
+                            <i class="material-icons text-warning mr-0">warning</i>
                             <% } else { %>
-                                <i class="material-icons text-success mr-0">check</i>
+                            <i class="material-icons text-success mr-0">check</i>
                             <% } %>
                             <%- poi.get("name") %>
-                            <small class="ml-3"><!--<%- Math.round(poi.get("distance")) %>-->10 km</small>
+                            <small class="ml-3"><%- Math.round(poi.get("distance")) %> km</small>
                         </span>
+                        <div class="mb-1">
+                            <%- poi.get("street") %>, <%- poi.get("city") %>
+                            <% if (poi.get("comment") != "") { %>
+                            <br><small><%- poi.get("comment") %></small>
+                            <% } %>
+                        </div>
                     </span>
-                    <div class ="float-righ">
-
-                        <a href="tel:<%- poi.get('phone_number') %>"><button type="button" class="btn btn-primary float-right">Anrufen</button></a>
-                        <a href="https://www.google.com/maps/search/?api=1&query=<%- poi.get('latitude') %>,<%- poi.get('longitude') %>">
-                        <button type="button" class="btn btn-secondary float-right mr-2">Navigieren</button>
-                        </a>
-                    </div>
-                    
-                </div>
-                <p class="mb-1">
-                    <%- poi.get("street") %>
-                    <% if (poi.get("comment") != "") { %>
-                        <br><small><%- poi.get("comment") %></small>
-                    <% } %>
-                </p>
             </a>
-        <% }); %>
+            <div class="float-right">
+                <a class="btn btn-primary float-right" href="tel:<%- poi.get('phone_number') %>">Anrufen</a>
+                <a class="btn btn-secondary float-right"
+                    href="https://www.google.com/maps/search/?api=1&query=<%- poi.get('latitude') %>,<%- poi.get('longitude') %>">
+                    Navigieren
+                </a>
+            </div>
+        </div>
     </div>
+    <% }); %>
+</div>
 </div>

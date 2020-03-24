@@ -38,7 +38,8 @@ define([
         poisCollection.fetch({
             data: $.param({ "lon": lon, "lat": lat, "area": area}),
             success: function(data) {
-                var poisListView = new PoisListView({ collection: poisCollection, lat:lat, lon:lon });
+                poisCollection.sort();
+                var poisListView = new PoisListView({ collection: poisCollection});
                 $('#poislist').html(poisListView.render().el);
             }
         });
