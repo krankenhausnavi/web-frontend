@@ -154,12 +154,17 @@
     }
 }
 
-#map_map_settings_list label.radio {
+#hospital-map_map_settings_list label.radio,
+#hospital-map_map_settings_list label.checkbox,
+#hospital-map_pois_settings_list label.radio,
+#hospital-map_pois_settings_list label.checkbox {
     display: block;
 }
 
 
-#map_map_settings_list label.radio input,
-#map_map_settings_list label.checkbox input {
+#hospital-map_map_settings_list label.radio input,
+#hospital-map_map_settings_list label.checkbox input,
+#hospital-map_pois_settings_list label.radio input,
+#hospital-map_pois_settings_list label.checkbox input {
     margin-right: 5px;
 }
