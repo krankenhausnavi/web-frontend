@@ -55,10 +55,10 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // We add the db info as request headers in apache.
-$db_host = $_SERVER['HTTP_DB-HOST'];
-$db_name = $_SERVER['HTTP_DB-NAME'];
-$db_user = $_SERVER['HTTP_DB-USER'];
-$db_password = $_SERVER['HTTP_DB-PASSWORD'];
+$db_host = $_SERVER['HTTP_X_DB_HOST'];
+$db_name = $_SERVER['HTTP_X_DB_NAME'];
+$db_user = $_SERVER['HTTP_X_DB_USER'];
+$db_password = $_SERVER['HTTP_X_DB_PASSWORD'];
 
 if (empty($_GET['lat']) || empty($_GET['lon']) || empty($_GET['area'])) {
     die('missing lat, lon or area in query params.');
