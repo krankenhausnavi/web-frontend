@@ -34,6 +34,16 @@ define([
             '#0000ff'
         );
 
+        var searcharea = map.addShapes('Suchbereich', ["CIRCLE (" + lon + " " + lat + " " + (area*1000) + ")"]);
+        map.zoomToExtent(searcharea);
+
+        $('#hospital-map_marker_info').on('click', '.more-info', function(){
+            $('#hospital-map_marker_info').modal('toggle');
+            var type = $(this).attr('data-type');
+            var id = $(this).attr('data-id');
+            location.href = "#detail/" + type + "/" + id;
+        });
+
         var poisCollection = new PoisCollection();
         poisCollection.fetch({
             data: $.param({ "lon": lon, "lat": lat, "area": area}),
