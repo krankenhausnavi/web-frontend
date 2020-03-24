@@ -6,13 +6,11 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// I really, really should change the pw and move this.
-// At least the db is only accessible from localhost.
-$db_host = "localhost";
-$db_name = "krankenbett";
-$db_user = "krankenbett";
-$db_password = "Igv214Wfdz40&0";
-
+// We add the db info as request headers in apache.
+$db_host = $_SERVER['HTTP_DB-HOST'];
+$db_name = $_SERVER['HTTP_DB-NAME'];
+$db_user = $_SERVER['HTTP_DB-USER'];
+$db_password = $_SERVER['HTTP_DB-PASSWORD'];
 
 if (empty($_GET['id'])) {
     die('missing id in query params.');
