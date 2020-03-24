@@ -274,8 +274,8 @@ while ($row = $stmt->fetch()) {
         $poi['resources'] = array(
             $row['r_id'] => array(
                 'type' => $row['r_resource_type'],
-                'in_use' => $in_use,
-                'max_available' => $max_available,
+                'max_available' => $row['r_max_capacity'],
+                'in_use' => $row['r_current_capacity'],
                 'last_update' => $in_use,
             )
         );
@@ -352,7 +352,7 @@ function results_format_geojson($results) {
             $properties['Webseite'] = $poi['website'];
         }
 
-        $properties["<a class=\"btn btn-info btn-block btn-lg\" href=\"https://krankenbett.wo-zu-finden.de/#detail/${type}/${id}\">&nbsp;Mehr Informationen</a>"] = "";
+        $properties["<button class=\"more-info btn btn-info btn-block btn-lg\" data-type=\"${type}\" data-id=\"${id}\">&nbsp;Mehr Informationen</a>"] = "";
 
         $feature = array(
             'type' => 'Feature',
