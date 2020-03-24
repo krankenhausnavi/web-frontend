@@ -24,9 +24,17 @@
                     </span>
                     <div class ="float-righ">
 
-                        <a href="tel:<%- poi.get('phone_number') %>"><button type="button" class="btn btn-primary float-right">Anrufen</button></a>
+                        <a href="tel:<%- poi.get('phone_number') %>">
+                            <button type="button" class="btn btn-primary float-right">
+                                <i class="material-icons">search</i>
+                                Anrufen
+                            </button>
+                        </a>
                         <a href="https://www.google.com/maps/search/?api=1&query=<%- poi.get('latitude') %>,<%- poi.get('longitude') %>">
-                        <button type="button" class="btn btn-secondary float-right mr-2">Navigieren</button>
+                            <button type="button" class="btn btn-secondary float-right mr-2">
+                                <i class="material-icons">navigation</i>
+                                Navigieren
+                            </button>
                         </a>
                     </div>
                     
