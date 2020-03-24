@@ -2,7 +2,7 @@
     <h1 class="mt-1 h3">
         <%- _.filter(collection.models, function (a) { return a.get('type') == 'HOSPITAL'; }).length %> Krankenhäuser
         und
-        <%- _.filter(collection.models, function (a) { return a.get('type') == 'HOSPITAL'; }).length %> Ärzte
+        <%- _.filter(collection.models, function (a) { return a.get('type') == 'DOCTOR'; }).length %> Ärzte
         in der Umgebung von <%- area %>km gefunden</h1>
     <div class="list-group">
         <% _.each(collection.models, function(poi) { %>
