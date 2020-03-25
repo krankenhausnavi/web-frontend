@@ -52,7 +52,7 @@ require.config({
 
 require([
     // Load our app module and pass it to our definition function
-    'app',
+    'application',
 ], function(App){
     // The "app" dependency is passed in as "App"
     App.initialize();
