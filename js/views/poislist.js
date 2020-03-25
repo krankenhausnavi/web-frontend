@@ -11,7 +11,7 @@ define([
 
         render: function () {
             var compiledTemplate = _.template(PoislistHtml);
-            var html = compiledTemplate({collection: this.collection, area: this.area});
+            var html = compiledTemplate({collection: this.collection, area: this.options.area});
             this.$el.html(html);
             return this;
         }

@@ -49,7 +49,7 @@ define([
             data: $.param({ "lon": lon, "lat": lat, "area": area}),
             success: function(data) {
                 poisCollection.sort();
-                var poisListView = new PoisListView({ collection: poisCollection});
+                var poisListView = new PoisListView({ collection: poisCollection, area: area});
                 $('#poislist').html(poisListView.render().el);
             }
         });
