@@ -4,6 +4,12 @@
     border-left: 0;
     border-right: 0; */
 }
+@media screen and (max-width: 768px) {
+    #hospital-map {
+        height: 300px;
+    }
+}
+
 
 .smallmap-wrapper {
     position: relative;
