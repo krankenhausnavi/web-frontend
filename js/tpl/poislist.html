@@ -28,18 +28,21 @@
                         <% } %>
                     </div>
                 </a>
-                <div class="col">
-                    <a href="tel:<%- poi.get('phone_number') %>">
-                        <button type="button" class="btn btn-primary">
-                            <i class="material-icons">call</i>
-                            Anrufen
-                        </button>
+                <div class="col btn-group-vertical">
+                    <% if (poi.get('phone_number') == "") { %>
+                    <button type="button" class="btn btn-outline-primary disabled">
+                        <i class="material-icons">phone_disabled</i>
+                        Anrufen
+                    </button>
+                    <% } else { %>
+                    <a href="tel:<%- poi.get('phone_number') %>" type="button" class="btn btn-primary">
+                        <i class="material-icons">call</i>
+                        Anrufen
                     </a>
-                    <a href="https://www.google.com/maps/search/?api=1&query=<%- poi.get('latitude') %>,<%- poi.get('longitude') %>">
-                        <button type="button" class="btn btn-secondary">
-                            <i class="material-icons">navigation</i>
-                            Navigieren
-                        </button>
+                    <% } %>
+                    <a href="https://www.google.com/maps/search/?api=1&query=<%- poi.get('latitude') %>,<%- poi.get('longitude') %>" type="button" class="btn btn-primary">
+                        <i class="material-icons">navigation</i>
+                        Navigieren
                     </a>
                 </div>
             </div>
