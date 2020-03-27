@@ -4,9 +4,9 @@
         und
         <%- _.filter(collection.models, function (a) { return a.get('type') == 'DOCTOR'; }).length %> Ärzte
         in der Umgebung von <%- area %>km gefunden</h1>
-    <div class="list-group">
+    <div class="list-group list-group-flush">
         <% _.each(collection.models, function(poi) { %>
-        <div class="list-group-item list-group-item-action">
+        <div class="list-group-item list-group-item-action" id="poislist-item">
             <div class="row" style="width: 100%">
                 <a href="/#detail/<%- poi.get('type') %>/<%- poi.get('id') %>" class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
                     <span class="h5 mb-1">
@@ -35,7 +35,7 @@
                         Anrufen
                     </button>
                     <% } else { %>
-                    <a href="tel:<%- poi.get('phone_number') %>" type="button" class="btn btn-primary">
+                    <a href="tel:<%- poi.get('phone_number') %>" type="button" class="btn btn-primary mb-1">
                         <i class="material-icons">call</i>
                         Anrufen
                     </a>

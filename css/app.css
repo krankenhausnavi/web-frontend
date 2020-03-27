@@ -99,6 +99,10 @@
     #nav-locate-btn {
         display: none;
     }
+
+    #poislist-item {
+        border-top: 2px solid #9124a3;
+    }
 }
 
 html, body {
